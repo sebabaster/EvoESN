@@ -1,4 +1,4 @@
-# EvoESN: source code and daat files for running experiments of the EvoESN model.
+# EvoESN: source code and data files for running experiments of the EvoESN model.
 
 This repository contains the necessary source code to use the EvoESN with the PSO algorithm. Also there are files with data, for making easy experiments. 
 For performing an experiment the user can run in a terminal the command: 
