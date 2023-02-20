@@ -26,7 +26,7 @@ from numpy import genfromtxt
 def initialSetup(selectedProblem):
     if selectedProblem in ["MGS", "Mackey-Glass", "Mackey Glass"]:
         print("Experimental setting for MGS")
-        data = np.load("data/mackey_glass_t17.npy")  # data was already preprocessed as indicated in the paper (normalization, etc.).
+        data = np.load("mackey_glass_t17.npy")  # data was already preprocessed as indicated in the paper (normalization, etc.).
         Learning_config = {'trainInit': 1000, \
                            'trainEnd': 3000, \
                            'testInit': 3000, \
@@ -61,7 +61,7 @@ def initialSetup(selectedProblem):
     else:
         # I assume that is selected Lorenz benchmark
         print("Experimental setting for Lorenz")
-        data = np.load("data/LorenzScaledXdata.npy") # data was already preprocessed as indicated in the paper.
+        data = np.load("LorenzScaledXdata.npy") # data was already preprocessed as indicated in the paper.
         Learning_config = {'trainInit': 1000, \
                            'trainEnd': 6000, \
                            'testInit': 6000, \
@@ -272,7 +272,7 @@ def baselineESN(evalParam, K):
                     np.save("Pred-"+str(k)+"-"+str(evalParam[0]["resSize"])+"-"+str(evalParam[0]["spectralRadius"])+"-"+str(evalParam[0]["density"])+"-"+str(evalParam[0]["leakyRate"]), y_pred)
                     np.save("Error-"+str(k)+"-"+str(evalParam[0]["resSize"])+"-"+str(evalParam[0]["spectralRadius"])+"-"+str(evalParam[0]["density"])+"-"+str(evalParam[0]["leakyRate"]), errorCoeff)
 
-    print("Finalization.")
+    print("End...")
 
 
 def main():
