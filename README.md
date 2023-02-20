@@ -16,3 +16,7 @@ Note that work over this code should cite our first article regarding this model
   number={}, <br />
   pages={1-8}, <br />
   doi={10.1109/IJCNN55064.2022.9892892}} <br />
+  
+
+## Notes<br/>
+If you find any problems or you have a suggestion for improvement, please don't hesitate in writing me. It will help us make this code better for everybody.
